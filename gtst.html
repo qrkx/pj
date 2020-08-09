@@ -125,7 +125,7 @@
 		<div class="swiper-wrapper">
 			<div class="swiper-slide" style="justify-content: center; font-size: 3em; color: #000; text-align: center;">
 				<div class="date" style="font-size: 0.5em">09/08/2020</div>
-				<div class="subject" style="font-size: 1.2em">Maths</div>
+				<div class="subject" id="Fulls" style="font-size: 1.2em">Maths</div>
 				<div class="topic" style="font-size: 0.6em">More-than, Less-than, Equal-to</div>
 			</div>
 			<div class="swiper-slide">
@@ -189,6 +189,10 @@
 		}
 
 		document.getElementById('fs').addEventListener('click', function() {
+		  toggleFullscreen();
+		});
+
+		document.getElementById('Fulls').addEventListener('click', function() {
 		  toggleFullscreen();
 		});
 
